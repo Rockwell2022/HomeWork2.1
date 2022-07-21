@@ -1,0 +1,13 @@
+const allSelectors = document.querySelectorAll("*").length;
+console.log('Number of All selectors: ', allSelectors);
+const divSelectors = document.querySelectorAll("div").length;
+console.log('Number of div selectors: ', divSelectors);
+const notdivSelectors = allSelectors - divSelectors;
+console.log('Number of not div selectors: ', notdivSelectors);
+const pSelectors = document.querySelectorAll("p");
+console.log(pSelectors);
+pSelectors.forEach((element) => {
+
+  element.style.setProperty('color', '#f70202');
+
+});
